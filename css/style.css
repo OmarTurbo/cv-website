@@ -1,6 +1,6 @@
 /* Main Rules */
 :root{
-    --main-color: rgb(145, 200 ,228);
+    --main-color: #91c8e4;
     --trans-color: rgb(34, 34, 34);
     --secondray-color:#749BC2;
     --light-color:#F6F4EB;
@@ -26,19 +26,21 @@ a{
 body{
     background-color: var(--trans-color);
 }
+
+.header{
+    color: #fff;
+    font-weight: 100;
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+.header span{
+    font-weight: 800;
+}
 /*End Main Rules*/
 
 /* Hero Section */
 .hero {
-    background-image:linear-gradient(180deg,
-    rgba(0, 0, 0, 0.204),
-    rgba(0, 0, 0, 0.804)), url(../Image/heroBg.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
     position: relative;
-
 }
 
 .hero nav ul li a{
@@ -51,7 +53,7 @@ body{
 .hero-content{
     color:#fff;
     text-align: center;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50% ,-80%);
@@ -103,40 +105,30 @@ body{
 }
 /* End Hero Section */
 
-/* Portfolio Section */
-#portfolio {
+/* Resume */
+#resume{
     padding: var(--section-padding);
+}
+#resume h3{
     text-align: center;
 }
-.header{
-    font-size: 36px;
-    font-weight: 300;
-    color: var(--main-color);
-}
-.header span{
-    font-weight: bold;
+#resume h4{
+    color: #fff;
 }
 
-#portfolio ul li a{
-    color: #777;
-}
-#portfolio ul li:hover a{
-    color: #fff;
-    font-weight: 700;
-}
-#portfolio .border img{
-    width: 95%;
-}
 .Education,.Experience{
-    max-width: 50%;
     padding: 10px;
 }
-.card {
-    width: 500px;
-    height: 400px;
-    padding: 20px;
-    margin: 30px 0;
+hr{
+    color: #fff;
+    width: 50%;
+    margin: 20px auto;
 }
+.card {
+    background-color: #333;
+    margin: 10px 0;
+}
+
 .card h5{
 font-size: 14px;
 }
@@ -161,3 +153,20 @@ font-size: 14px;
     margin-right: 10px;
     margin-bottom: 2px;
 }
+.Experience .links{
+    display: flex;
+    align-items: center;
+}
+.Experience .links h6 {
+    margin-right: 30px;
+}
+/* .Experience .links h6 a:hover{
+    color: #000;
+} */
+.Experience .links h6::before{
+    content: "\f09b";
+    font: var(--fa-font-brands);
+    margin-right: 10px;
+    margin-bottom: 2px;
+}
+/* End Resume */
