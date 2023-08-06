@@ -23,18 +23,23 @@ a{
     color: #fff;
     transition:  0.3s ease;
 }
+.card-padd{
+    padding:0 5px;
+}
 body{
     background-color: var(--trans-color);
-}
-
-.header{
     color: #fff;
+    scroll-behavior: smooth;
+}
+.header{
+    color: #cccccc;
     font-weight: 100;
     font-size: 55px;
-    margin-bottom: 50px;
+    text-align: center;
 }
 .header span{
-    font-weight: 800;
+    color: #fff;
+    font-weight: 900;
 }
 /*End Main Rules*/
 
@@ -170,3 +175,77 @@ font-size: 14px;
     margin-bottom: 2px;
 }
 /* End Resume */
+
+/* About  */
+#about p{
+    line-height: 1.5;
+}
+#about .header{
+    text-align:start ;
+}
+#about a:hover{
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    .card{
+        font-size: 12px;
+    }
+    #about{
+        /* text-align: center; */
+    }
+    #about .img-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #about .header{
+        margin: 50px 0;
+        text-align: center;
+    }
+}
+/* End About */
+
+
+.service{
+    padding: var(--section-padding);
+    text-align: center;
+
+}
+
+.service .card-container{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+
+}
+.service .card .icon-container{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: var(--main-color);
+    margin: auto;
+    border-radius: 50%;
+}
+
+.service .card .icon-container i{
+    font-size: 3rem;
+}
+
+.service .card .content{
+    margin-top: 20px;
+}
+.service .card .content h4{
+    margin: 15px 0;
+}
+.service .card .content span{
+    transition: 0.2s ease ;
+}
+.service .card .content a:hover span{
+    margin-left: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .service .card-container{
+        flex-direction: column;
+    }
+}
