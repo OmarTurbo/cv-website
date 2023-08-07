@@ -34,7 +34,8 @@ body{
 .header{
     color: #cccccc;
     font-weight: 100;
-    font-size: 55px;
+    font-size: 38px;
+    margin-bottom: 50px;
     text-align: center;
 }
 .header span{
@@ -175,36 +176,7 @@ font-size: 14px;
     margin-bottom: 2px;
 }
 /* End Resume */
-
-/* About  */
-#about p{
-    line-height: 1.5;
-}
-#about .header{
-    text-align:start ;
-}
-#about a:hover{
-    color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-    .card{
-        font-size: 12px;
-    }
-    #about{
-        /* text-align: center; */
-    }
-    #about .img-container{
-        width: 80%;
-        margin: 0 auto;
-    }
-    #about .header{
-        margin: 50px 0;
-        text-align: center;
-    }
-}
-/* End About */
-
+/* Services */
 
 .service{
     padding: var(--section-padding);
@@ -248,4 +220,47 @@ font-size: 14px;
     .service .card-container{
         flex-direction: column;
     }
+}
+/* End Services */
+/* contact */
+
+#contact{
+    padding: var(--section-padding);
+}
+
+#contact .content{
+    padding: 20px;
+    
+}
+#contact .col-md-6{
+    margin-top: 70px;
+}
+
+#contact .content input,
+#contact .content textarea{
+    margin: 15px 0;
+    background-color: #333;
+    outline-offset: none;
+    color: var(--secondray-color);
+    border: none;
+}
+
+#contact .content button{
+    background-color: var(--secondray-color);
+    transition: 0.3s ease-in-out;
+}
+#contact .content button:hover{
+    padding: 15px;
+}
+
+#contact .content .timmed,
+#contact .content p,
+#contact .content address {
+    text-align: start;
+    margin: 25px 0;
+    color: #888;
+}
+
+.timmed{
+    color: var(--secondray-color)!important;
 }
