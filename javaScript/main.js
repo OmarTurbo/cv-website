@@ -34,7 +34,7 @@ copyEmailBtn.addEventListener("click",copyEmail);
 copyNumberBtn.addEventListener("click",copyNumber);
 
 let changingPart = $('.hero-content span').offset().top;
-let resumePart = $('#resume').offset().top;
+let heroPart = $('.hero').offset().top;
 
 $(window).scroll(()=>{
     let wScroll = $(window).scrollTop();
@@ -47,19 +47,10 @@ $(window).scroll(()=>{
         $('nav a').css('color','#fff')
         $('nav').css('padding','0')
     };
-
-    if(wScroll> resumePart){
-        $('#upBtn').fadeIn(1000);
-        $('#upBtn').click(()=>{
-            $('body,html').animate({scrollTop:0},3000)
-        })
-    }else{
-        $('#upBtn').fadeOut(1000);
-    }
 })
 
 
-$(".hero a").click((e)=>{
+$(".hero a[href^='#']").click((e)=>{
     let aHref = e.target.getAttribute('href');
     let sectionOffset = $(aHref).offset().top;
     console.log(sectionOffset)
@@ -69,3 +60,16 @@ $(".hero a").click((e)=>{
 $('#showBtn').click(()=>{
     $('nav').toggle()
 })
+
+$(function() {
+    $(window).scroll(function () {
+     if ($(this).scrollTop() > 500) {
+       $('#upBtn').fadeIn();
+     } else {
+       $('#upBtn').fadeOut();
+     }
+    });
+    $('#upBtn').click(function () {
+     $('html, body').animate({ scrollTop: 0 }, 2000);
+    });
+   });
