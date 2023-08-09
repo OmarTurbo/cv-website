@@ -20,6 +20,13 @@
 </head>
 
 <body id="home">
+    <section id="loader">
+          <div class="spinner">
+            <div class="spinner-item"></div>
+            <div class="spinner-item"></div>
+            <div class="spinner-item"></div>
+          </div>
+    </section>
     <button class="btn rounded text-white" id="upBtn">
         <i class="fas fa-arrow-up"></i>
     </button>
@@ -35,13 +42,14 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                </ul>    
+                </ul>
             </div>
         </nav>
-
-        <div class="hero-content">
+        <div class="hero-content" >
             <h2>Welcome, I Am</h2>
-            <h1 id="mainHeader">Omar Turbo</h1>
+            <div class="d-flex align-items-center">
+                <h1 id="mainHeader" ></h1>
+            </div>
             <span>And this is my Resume</span>
         </div>
     </section>
@@ -163,7 +171,7 @@
 
     </section>
     <!-- End Resume Section -->
-    
+
     <!-- Section About -->
     <section id="about">
         <div class="container">
@@ -268,48 +276,53 @@
     <!-- End Section Service -->
 
     <!-- Contact Section -->
-        <section id="contact">
-            <div class="container">
-                <h3 class="header">Get <span>In Touch</span></h3>
-                <div class="row">
-                    <div class="col-md-6 ">
-                        <div class="content">
-                            <h3 class="mb-5">Get In Touch</h3>
-                            <form action="/" method="post" class="form-group">
-                                <input type="text" class="form-control" name="clientName" placeholder="Enter your Name...">
-                                <input type="email" class="form-control" name="clientEmail" placeholder="Enter your Email...">
-                                <input type="tel" class="form-control" name="clientPhone" placeholder="Enter your Phone Number...">
-                                <textarea class="form-control" rows="10" cols="30" placeholder="Message..." name="clientMessage"></textarea>
-                                <button type="submit" class="btn w-50 rounded-pill">Send</button>
-                            </form>
-                        </div>
+    <section id="contact">
+        <div class="container">
+            <h3 class="header">Get <span>In Touch</span></h3>
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="content">
+                        <h3 class="mb-5">Get In Touch</h3>
+                        <form action="/" method="post" class="form-group">
+                            <input type="text" class="form-control" name="clientName" placeholder="Enter your Name...">
+                            <input type="email" class="form-control" name="clientEmail"
+                                placeholder="Enter your Email...">
+                            <input type="tel" class="form-control" name="clientPhone"
+                                placeholder="Enter your Phone Number...">
+                            <textarea class="form-control" rows="10" cols="30" placeholder="Message..."
+                                name="clientMessage"></textarea>
+                            <button type="submit" class="btn w-50 rounded-pill">Send</button>
+                        </form>
                     </div>
-                    <div class="col-md-6 col-sm-12 contact-details">
-                        <div class="content">
-                            <h3 class="mb-5">My Contact Details</h3>
-                            <h6 class="timmed mt-3">Email:</h6> 
-                            <div class="group">
-                                <p id="emailData">omarahmedmahmoudmohamed@gmail.com </p><button class="btn rounded-pill copyMail">Copy Me</button>
-                            </div>
-                            <div id="alert1" class="alert alert-success d-none " role="alert">Copied text</div>
-                            <h6 class="timmed">Phone:</h6>
-                            <div class="group">
-                                <p id="numberData">(+20)1062607688</p><button class="btn rounded-pill copyNumber">Copy Me</button>  
-                            </div>
-                            <div id="alert2" class="alert alert-success d-none " role="alert">Copied text</div>
-                            <h6 class="timmed">Address:</h6>
-                            <Address>Future city,
-                                    Hickstep,
-                                    Cairo,
-                                    Egypt
-                            </Address>
+                </div>
+                <div class="col-md-6 col-sm-12 contact-details">
+                    <div class="content">
+                        <h3 class="mb-5">My Contact Details</h3>
+                        <h6 class="timmed mt-3">Email:</h6>
+                        <div class="group">
+                            <p id="emailData">omarahmedmahmoudmohamed@gmail.com </p><button
+                                class="btn rounded-pill copyMail">Copy Me</button>
                         </div>
+                        <div id="alert1" class="alert alert-success d-none " role="alert">Copied text</div>
+                        <h6 class="timmed">Phone:</h6>
+                        <div class="group">
+                            <p id="numberData">(+20)1062607688</p><button class="btn rounded-pill copyNumber">Copy
+                                Me</button>
+                        </div>
+                        <div id="alert2" class="alert alert-success d-none " role="alert">Copied text</div>
+                        <h6 class="timmed">Address:</h6>
+                        <Address>Future city,
+                            Hickstep,
+                            Cairo,
+                            Egypt
+                        </Address>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
     <!-- EndContact Section -->
-    
+
     <!-- Bootstrap Script -->
     <script src="javaScript/bootstrap.bundle.js"></script>
     <!-- Jquery -->
@@ -317,7 +330,8 @@
     <!-- Particles.js -->
     <script src="javaScript/particles.js"></script>
     <script src="javaScript/app.js"></script>
-
+    <!-- Typed Js -->
+    <script src="javaScript/typed.umd.js"></script>
     <!-- Main Js -->
     <script src="javaScript/main.js"></script>
 
