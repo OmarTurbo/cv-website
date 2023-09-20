@@ -82,7 +82,7 @@ $(document).ready(()=>{
     })
 })
 
-var typed = new Typed('#mainHeader', {
+var typed1 = new Typed('#mainHeader', {
     strings: ['Omar Turbo','Front-End','"Hello World!"'],
     typeSpeed:100,
     smartBackSpace:true,

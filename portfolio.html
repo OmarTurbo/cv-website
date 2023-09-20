@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,200;0,500;0,700;1,200&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- portfolio Css -->
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <nav>
+                <a href="index.html">Go back home</a>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="portfolio-content ">
+            <div class="d-flex  align-items-center mb-5">
+                <h1 id="portfolioText"></h1>
+            </div>
+            <h2>If came here you are just now going to see something great!</h2>
+        </div>
+    </div>
+    <!-- Bootstrap -->
+    <script src="javaScript/bootstrap.bundle.js"></script>
+    <!-- Jquery -->
+    <script src="javaScript/jquery.js"></script>
+    <script src="javaScript/app.js"></script>
+    <!-- Typed Js -->
+    <script src="javaScript/typed.umd.js"></script>
+    <!-- Main Js -->
+    <script src="javaScript/main.js"></script>
+    <script>
+        var typed2 = new Typed('#portfolioText', {
+            strings: ['"Hello World!"', 'Coming Soon!'],
+            typeSpeed: 70,
+            smartBackSpace: true,
+            loop: true,
+            startDelay: 4,
+        });
+    </script>
+</body>
+
+</html>
